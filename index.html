@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<title>Tarea 13</title>
+</head>
+<body>
+    <section class="actividad" ng-app="MyApp" ng-controller="formControl">
+        <form novalidate>
+            <h2 class="titulo">Actividad asincrónica N° 13</h2>
+            <p>Ingresa el número para calcular importe bruto, descuento y total.</p>
+            
+            <p>
+                <label>Ingresar recorrido</label>
+                <input type="text" ng-model="km.recorrido">
+            </p>
+            <input class="boton" type="button" ng-click="calcular()" value="Calcular">
+            <p class="result">Recorrido: {{km.recorrido}}</p>
+            <section class="result2">
+            <p>Importe Bruto: {{km.pago}}</p>
+            <p>Descuento: {{km.descuento}}</p>
+            <p>Total: {{km.total}}</p>
+            </section>
+        </form>
+    </section>
+<script src="tarea13.js"></script>
+</body>
+</html>
